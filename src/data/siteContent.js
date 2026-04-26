@@ -68,33 +68,48 @@ export const aboutCards = [
 export const services = [
   {
     eyebrow: "Awareness",
+    visual: "awareness",
+    emoji: "🛡️",
     title: "Awareness Programs",
     description:
       "Short, high-impact sessions covering phishing, scams, social engineering, digital hygiene, and the warning signs people often ignore.",
+    highlights: ["Phishing cues", "Scam red flags", "Safer daily habits"],
   },
   {
     eyebrow: "Workshops",
+    visual: "workshops",
+    emoji: "🎯",
     title: "Interactive Workshops",
     description:
       "Hands-on workshops for universities, communities, startups, and organizations that want stronger cyber awareness with direct engagement.",
+    highlights: ["Live scenarios", "Group activities", "Audience-focused delivery"],
   },
   {
     eyebrow: "Training",
+    visual: "training",
+    emoji: "💻",
     title: "Skill-Based Training",
     description:
       "Structured training across security foundations, response habits, tool familiarity, and defensive thinking for learners building real confidence.",
+    highlights: ["Foundations", "Practice drills", "Defensive mindset"],
   },
   {
     eyebrow: "Assessment",
+    visual: "testing",
+    emoji: "🔎",
     title: "Website Security Testing",
     description:
       "Targeted website security reviews focused on common weaknesses, risky configurations, exposed forms, and basic attack-surface issues that affect trust and safety.",
+    highlights: ["Surface review", "Risk findings", "Clear next steps"],
   },
   {
     eyebrow: "Protection",
+    visual: "social",
+    emoji: "📱",
     title: "Social Media Security Advisory",
     description:
       "Guidance for securing social media presence against impersonation, account takeover, phishing messages, unsafe access practices, and brand-targeted scams.",
+    highlights: ["Account safety", "Impersonation checks", "Team access hygiene"],
   },
 ];
 

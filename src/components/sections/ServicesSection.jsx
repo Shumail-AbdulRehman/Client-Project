@@ -6,23 +6,26 @@ import { services } from "../../data/siteContent";
 
 function ServicesSection() {
   return (
-    <section id="services" className="py-16 sm:py-20">
+    <section id="services" className="relative py-16 sm:py-20">
+      <div className="pointer-events-none absolute inset-x-0 top-10 h-72 bg-[radial-gradient(circle_at_center,rgba(14,116,144,0.1),transparent_68%)]" />
+
       <Container>
         <SectionHeading
           kicker="Services"
           title="Focused services for practical security improvement"
-          description="The offer is intentionally simple: awareness, testing, advisory, and training services that are easy to understand and easy to act on."
+          description="Each service is designed to feel clear, modern, and easy to trust, with focused delivery for awareness, training, reviews, and practical security support."
         />
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="relative grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
-            <Reveal
-              key={service.title}
-            >
+            <Reveal key={service.title} className="h-full">
               <InfoCard
                 eyebrow={service.eyebrow}
                 title={service.title}
                 description={service.description}
+                highlights={service.highlights}
+                visual={service.visual}
+                emoji={service.emoji}
               />
             </Reveal>
           ))}
