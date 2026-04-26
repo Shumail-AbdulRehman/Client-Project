@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#f7f4ee] text-[#182437] antialiased;
+    font-family: "Manrope", sans-serif;
+    background-image:
+      radial-gradient(circle at top center, rgba(49, 95, 114, 0.08), transparent 28%),
+      linear-gradient(180deg, #f7f4ee 0%, #f3efe7 100%);
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Sora", sans-serif;
+  }
+
+  ::selection {
+    @apply bg-sky-200 text-slate-900;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply border border-slate-200 bg-white;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-kicker {
+    @apply text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-sky-700;
+  }
+
+  .enter-fade-up {
+    animation: enter-fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    will-change: opacity, transform;
+  }
+
+  .enter-delay-1 {
+    animation-delay: 0.08s;
+  }
+
+  .enter-delay-2 {
+    animation-delay: 0.16s;
+  }
+
+  .enter-delay-3 {
+    animation-delay: 0.24s;
+  }
+
+  .hover-lift {
+    transition:
+      transform 0.22s ease,
+      border-color 0.22s ease,
+      box-shadow 0.22s ease,
+      background-color 0.22s ease;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .hover-lift:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.1);
+    }
+  }
+}
+
+@keyframes enter-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
