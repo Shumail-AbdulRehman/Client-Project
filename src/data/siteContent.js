@@ -1,3 +1,8 @@
+import awarenessProgramImage from "../../cybersecurity-awareness-banner.jpg.jpeg";
+import testingImage from "../../security_testing_banner.jpg.jpeg";
+import socialMediaImage from "../../social_media_security.jpg.jpeg";
+import aboutFeatureImage from "../../WhatsApp Image 2026-04-26 at 4.25.49 PM.jpeg";
+
 export const navigation = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -56,7 +61,7 @@ export const aboutCards = [
   {
     title: "Founder",
     body:
-      "Founded by Saad Naveed, a BS Cybersecurity student and Founder & President of Cyber Infinity Cyber Security Society at Riphah International University Islamabad.",
+      "Founded by Saad Naveed, Founder & President of Cyber Infinity Cyber Security Society at Riphah International University Islamabad.",
     list: [
       "Awareness programs for students and teams",
       "Workshop-led delivery for institutions and communities",
@@ -65,38 +70,31 @@ export const aboutCards = [
   },
 ];
 
+export const aboutFeature = {
+  image: aboutFeatureImage,
+  alt: "Social media security best practices infographic",
+  badge: "Visual Guidance",
+  title: "Simple visuals make security advice easier to follow.",
+  description:
+    "Spectrazex uses visual examples, clean explanations, and practical scenarios so teams can understand risks faster and remember the right actions.",
+};
+
 export const services = [
   {
     eyebrow: "Awareness",
-    visual: "awareness",
     emoji: "🛡️",
-    title: "Awareness Programs",
+    image: awarenessProgramImage,
+    imageAlt: "Cyber security awareness banner with shield and threat prevention tips",
+    title: "Cyber Awareness Programs",
     description:
       "Short, high-impact sessions covering phishing, scams, social engineering, digital hygiene, and the warning signs people often ignore.",
     highlights: ["Phishing cues", "Scam red flags", "Safer daily habits"],
   },
   {
-    eyebrow: "Workshops",
-    visual: "workshops",
-    emoji: "🎯",
-    title: "Interactive Workshops",
-    description:
-      "Hands-on workshops for universities, communities, startups, and organizations that want stronger cyber awareness with direct engagement.",
-    highlights: ["Live scenarios", "Group activities", "Audience-focused delivery"],
-  },
-  {
-    eyebrow: "Training",
-    visual: "training",
-    emoji: "💻",
-    title: "Skill-Based Training",
-    description:
-      "Structured training across security foundations, response habits, tool familiarity, and defensive thinking for learners building real confidence.",
-    highlights: ["Foundations", "Practice drills", "Defensive mindset"],
-  },
-  {
     eyebrow: "Assessment",
-    visual: "testing",
     emoji: "🔎",
+    image: testingImage,
+    imageAlt: "Security testing dashboard showing vulnerability scanner and risk scoring",
     title: "Website Security Testing",
     description:
       "Targeted website security reviews focused on common weaknesses, risky configurations, exposed forms, and basic attack-surface issues that affect trust and safety.",
@@ -104,9 +102,10 @@ export const services = [
   },
   {
     eyebrow: "Protection",
-    visual: "social",
     emoji: "📱",
-    title: "Social Media Security Advisory",
+    image: socialMediaImage,
+    imageAlt: "Social media security service dashboard with account protection and phishing detection",
+    title: "Social Media Security",
     description:
       "Guidance for securing social media presence against impersonation, account takeover, phishing messages, unsafe access practices, and brand-targeted scams.",
     highlights: ["Account safety", "Impersonation checks", "Team access hygiene"],

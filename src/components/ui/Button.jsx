@@ -9,9 +9,9 @@ function Button({ href, children, variant = "primary", size = "md", type = "butt
 
   const variants = {
     primary:
-      "bg-slate-900 text-white hover:bg-slate-800",
+      "bg-sky-300 text-slate-950 hover:bg-sky-200",
     secondary:
-      "border border-slate-300 bg-transparent text-slate-900 hover:border-sky-700/40 hover:text-sky-700",
+      "border border-white/18 bg-white/6 text-white hover:border-sky-300/60 hover:bg-white/10 hover:text-sky-100",
   };
 
   const className = `${baseStyles} ${sizes[size]} ${variants[variant]}`;

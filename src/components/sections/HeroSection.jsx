@@ -19,10 +19,10 @@ function HeroSection() {
             delay={280}
             speed={32}
             text="Practical cyber security support for startups, teams, and communities."
-            className="mt-5 text-balance text-4xl font-bold leading-tight tracking-[-0.04em] text-slate-900 sm:text-5xl lg:text-[4.2rem]"
+            className="mt-5 text-balance text-4xl font-bold leading-tight tracking-[-0.04em] text-slate-50 sm:text-5xl lg:text-[4.2rem]"
           />
 
-          <p className="hero-text-reveal hero-text-delay-3 mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+          <p className="hero-text-reveal hero-text-delay-3 mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
             Spectrazex helps people understand digital risk, improve security habits, and respond
             better to phishing, scams, weak account practices, and everyday online threats.
           </p>
@@ -34,7 +34,7 @@ function HeroSection() {
             </Button>
           </div>
 
-          <div className="mt-14 grid gap-6 border-t border-slate-200 pt-8 sm:grid-cols-3">
+          <div className="mt-14 grid gap-6 border-t border-white/12 pt-8 sm:grid-cols-3">
             {heroMetrics.map((metric) => (
               <StatCard key={metric.label} value={metric.value} label={metric.label} />
             ))}

@@ -24,7 +24,8 @@ function ServicesSection() {
                 title={service.title}
                 description={service.description}
                 highlights={service.highlights}
-                visual={service.visual}
+                image={service.image}
+                imageAlt={service.imageAlt}
                 emoji={service.emoji}
               />
             </Reveal>
