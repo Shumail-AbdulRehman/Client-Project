@@ -160,6 +160,10 @@ export const certifications = [
 export const contactDetails = {
   intro:
     "Reach out for awareness sessions, cyber-security workshops, speaking opportunities, or tailored training for your team or community.",
+  phone: "+92 3165866515",
+  quickContactTitle: "Speak with a security specialist",
+  quickContactText:
+    "For awareness programs, website testing, or social media security support, contact us directly for a focused discussion on the right service for your team.",
   linkedin: "https://www.linkedin.com/in/saadjanjua",
   email: "hello@spectrazex.com",
 };

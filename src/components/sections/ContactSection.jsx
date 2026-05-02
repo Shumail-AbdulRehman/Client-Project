@@ -68,6 +68,24 @@ function ContactSection() {
               {contactDetails.intro}
             </p>
 
+            <div className="mt-8 rounded-[24px] border border-sky-100 bg-sky-50/80 p-5">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-sky-700">
+                Quick Contact
+              </p>
+              <h4 className="mt-2 text-lg font-semibold text-slate-900">
+                {contactDetails.quickContactTitle}
+              </h4>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                {contactDetails.quickContactText}
+              </p>
+              <a
+                href={`tel:${contactDetails.phone.replace(/\s+/g, "")}`}
+                className="mt-4 inline-flex items-center rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+              >
+                Contact us at {contactDetails.phone}
+              </a>
+            </div>
+
             <div className="mt-8 space-y-4 border-t border-slate-200 pt-6">
               <div>
                 <p className="text-xs uppercase tracking-[0.14em] text-slate-500">LinkedIn</p>
@@ -88,6 +106,16 @@ function ContactSection() {
                   className="mt-2 inline-block text-base font-semibold text-slate-900 transition hover:text-sky-700"
                 >
                   {contactDetails.email}
+                </a>
+              </div>
+
+              <div>
+                <p className="text-xs uppercase tracking-[0.14em] text-slate-500">Phone</p>
+                <a
+                  href={`tel:${contactDetails.phone.replace(/\s+/g, "")}`}
+                  className="mt-2 inline-block text-base font-semibold text-slate-900 transition hover:text-sky-700"
+                >
+                  {contactDetails.phone}
                 </a>
               </div>
             </div>
